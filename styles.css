@@ -135,12 +135,17 @@ body {
 }
 
 /* Shopify */
-.shopify-section{
+.shopify-section {
+  border-bottom: solid 1px #31443830;
+}
 
+.shopify-section > .container {
+  padding: 30px;
 }
 
 .shopify-section-container {
-  padding: 30px;
+  max-width: 100%;
+  width: 100%;
   text-align: center;
 }
 
@@ -150,24 +155,27 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #314438;
-  padding-bottom: 30px;
 }
 
 .shopify-companies {
-  width: 100%;
-  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
 }
 
-.shopify-companies ul{
+.shopify-companies ul {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .shopify-companies ul li {
   list-style: none;
+  width: 25%;
 }
 
 .shopify-companies-item {
-  width: 25%;
-  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
