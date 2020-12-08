@@ -6,6 +6,11 @@ body {
   line-height: 170%;
 }
 
+h2 {
+  color: #314438;
+  font-weight: 400;
+  line-height: 120%;
+}
 .utility-bar {
   background: #314438;
   font-size: 0.9rem;
@@ -178,4 +183,151 @@ body {
 .shopify-companies-item {
   max-width: 100%;
   max-height: 100%;
+}
+
+.section-heading {
+  font-size: 2em !important;
+  text-align: center;
+  margin: 0;
+}
+
+.heading-padding-bottom {
+  padding-bottom: 40px;
+}
+
+.group-environement {
+}
+
+.group-environement ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.group-environement > ul > li {
+  position: relative;
+  padding: 10px;
+}
+
+.img-environement {
+  width: 100%;
+  max-width: 100%;
+  height: 330px;
+}
+
+.environement-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.env-title {
+  margin: 0;
+  padding: 5px 120px 0 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.env-nav-arrow {
+  background: white;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.section-container-environements {
+  padding-top: 90px;
+}
+
+.products-container h2 {
+  padding-top: 90px;
+  text-transform: uppercase;
+  display: block;
+}
+.section-products {
+}
+
+.group-products {
+}
+
+.group-products ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.group-products > ul > li {
+  position: relative;
+  padding: 10px;
+}
+
+.product-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.product-link {
+  position: absolute;
+  display: block;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.product-nav-title {
+  font-weight: bold;
+  font-size: 26px;
+  color: #314438;
+  margin: 0;
+  display: block;
+  padding-bottom: 5px;
+}
+
+.product-nav-sub-title {
+  font-size: 16px;
+  color: #314438;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.product-heading {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 170%;
+}
+
+.global-green-btn {
+  display: block;
+  max-width: 207px;
+  height: 51px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background: #314438;
+  padding: 12px 25px;
+  border: 2px solid #314438;
+  margin:  75px auto;
+}
+
+.section-feature{
+  background: #f3eeea;
 }
