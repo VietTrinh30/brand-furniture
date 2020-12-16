@@ -341,6 +341,7 @@ h2 {
 }
 
 .c-iwt-row {
+  padding-top: 90px;
 }
 
 .c-feature-heading {
@@ -547,6 +548,67 @@ h2 {
 
 .c-bs-container {
   padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.c-bs-arrow-left svg {
+  transform: rotate(180deg);
+}
+
+.c-bs-slider-nav {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.c-bs-header {
+  display: flex;
+  width: 100%;
+}
+
+.c-bs-header h3 {
+  font-size: 40px;
+  color: #314438;
+  font-weight: normal;
+  margin: auto;
+}
+
+.c-bs-item {
+  width: 325px;
+  background: white;
+}
+
+.c-bs-item-text-content {
+  padding: 20px 25px;
+}
+
+.c-bs-item > img {
+  width: 100%;
+  height: auto;
+}
+
+.c-bs-item-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #314438;
+  margin: 0;
+}
+
+.c-bs-item-price {
+  font-weight: normal;
+  font-size: 14px;
+  color: #314438;
+}
+
+.c-bs-item-price .origin-price {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.c-bs-item-vendor {
+  font-weight: normal;
+  font-size: 14px;
+  color: #314438;
+  opacity: 0.6;
 }
 
 .c-seller-slider {
@@ -702,6 +764,31 @@ svg .icon-instagram {
 }
 
 .footer-container {
+  padding: 5em 0;
+}
+
+.session-best-sellers {
+  background: #f3f0ed;
+}
+
+.items {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 100px;
+}
+
+.slick-slide {
+  margin: 10px;
+  opacity: 0.3;
+}
+
+.slick-slide img {
+  width: 100%;
+  border: 0px solid #fff;
+}
+
+.slick-active {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
@@ -817,4 +904,13 @@ svg .icon-instagram {
   .c-footer-brand {
     max-width: 100%;
   }
+
+  .c-bs-header h3 {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .c-iwt-row {
+  padding-top: 0px;
+}
 }
