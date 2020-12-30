@@ -22,6 +22,14 @@ h2 {
   font-weight: 400;
   line-height: 120%;
 }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
 .utility-bar {
   background: #314438;
   font-size: 0.9rem;
@@ -29,18 +37,20 @@ h2 {
 }
 .utility-bar a {
   color: white;
+  text-align: center;
 }
 
 .custom-header-container {
   width: 100%;
   border-bottom: solid 1px green;
   padding: 0px;
+  background: #f3eeea;
 }
 
 .main-header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  padding: 10px 5px;
 }
 
 .logo-menu-container {
@@ -52,15 +62,62 @@ h2 {
   margin-left: 20px;
 }
 
+.nav-menu-container {
+  width: 100%;
+  background: white;
+  position: fixed;
+  height: 100vh;
+  top: 150px;
+  left: 0px;
+  padding: 10px 0px;
+}
+
+.product-menu-container {
+}
+
+.product-menu-container > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.product-menu-container > ul > li {
+  border-bottom: 1px #31443830 solid;
+  list-style: none;
+  padding: 10px 0px 10px 20px;
+}
+
+.help-menu-container > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.help-menu-container > ul > li {
+  list-style: none;
+  padding: 10px 20px;
+  border-bottom: 1px solid #31443830;
+}
+
+.nav-header-item {
+  text-transform: none;
+  margin: 0;
+  font-size: 13px;
+  font-weight: bold;
+  color: #314438;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 1rem;
+}
+
 .custom-shop-header {
   display: flex;
+  margin-left: auto;
   align-items: center;
 }
 
 .language {
   border: solid 1px #3144385e;
   text-align: center;
-  padding: 2px 5px;
+  padding: 6px 8px;
 }
 
 .language::before {
@@ -81,7 +138,79 @@ h2 {
   height: 24px;
   margin: 0 10px;
 }
+
+.product-menu-nav {
+  position: relative;
+  width: 100%;
+}
+
+.product-menu-nav > .icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  box-sizing: content-box;
+  padding: 0.5em;
+}
+
+.submenu {
+}
+
+.submenu ul {
+  padding: 10px 0px 10px 20px;
+}
+
+.submenu ul li {
+  list-style: none;
+  display: flex;
+}
+
+.submenu-link {
+  width: 500px;
+  color: #314438;
+}
+
+.submenu-item {
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.submenu-item > .icon {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  box-sizing: content-box;
+  padding: 0.5em;
+}
+
+.submenu-menu {
+}
+
+.submenu-menu ul li {
+  padding: 10px;
+}
+
+.submenu-menu-item {
+  color: #314438;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.help-menu-item {
+  position: relative;
+}
+
+.help-menu-item > .icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  box-sizing: content-box;
+  padding: 0.5em;
+}
 /* Banner styles */
+.banner {
+  margin-top: 150px;
+}
 
 .banner .container {
   padding: 0px;
@@ -689,7 +818,7 @@ h2 {
   padding: 8px;
 }
 
-svg .icon {
+.svg .icon {
   width: 1em;
   height: 1em;
   font-size: 1em;
@@ -791,6 +920,91 @@ svg .icon-instagram {
   opacity: 1;
 }
 
+.c-rv-title {
+  font-size: 28px;
+  text-align: center;
+}
+
+.c-rv-quote-icon {
+  text-align: center;
+  padding: 20px;
+}
+
+.c-rv-item-decs {
+  font-weight: normal;
+  font-size: 16px;
+  color: #314438;
+  text-align: center;
+}
+
+.c-rv-personal-avartar {
+  width: 20%;
+  margin: 0;
+}
+
+.c-rv-personal-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.c-rv-personal-avartar img {
+  max-width: 100%;
+  height: auto;
+  max-height: 50px;
+  margin-bottom: 5px;
+  margin: auto;
+}
+
+.c-t-name {
+  order: 2;
+  font-weight: bold;
+  font-size: 14px;
+  color: #314438;
+  margin: 0;
+}
+
+.c-t-job-title {
+  order: 3;
+  font-weight: normal;
+  font-size: 14px;
+  color: #314438;
+  opacity: 0.7;
+  padding-bottom: 8px;
+  min-height: 55px;
+}
+
+.c-t-text {
+  font-weight: normal;
+  font-size: 14px;
+  color: #314438;
+  letter-spacing: 0;
+  word-spacing: -1px;
+  order: 1;
+}
+
+.c-personal-col {
+  padding: 20px;
+}
+
+.c-company-container {
+  margin: auto;
+}
+
+.c-rv-personal-item {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  padding: 40px 10px;
+  border: none;
+  flex-direction: row;
+}
+
+.c-rv-slider {
+  border-bottom: solid 1px #bb314438;
+}
 @media (min-width: 768px) {
   .banner-title {
     font-size: 60px;
@@ -912,5 +1126,53 @@ svg .icon-instagram {
 
   .c-iwt-row {
     padding-top: 0px;
+  }
+
+  .c-rv-personal-item {
+    border: 1px solid #3144382b;
+    border-radius: 2px;
+    text-align: center;
+    padding: 25px;
+
+    flex-direction: column;
+    margin: 15px 0px;
+  }
+
+  .c-rv-personal-avartar {
+    margin: auto;
+  }
+
+  .c-t-name {
+    order: 1;
+  }
+
+  .c-t-job-title {
+    order: 2;
+  }
+
+  .c-t-text {
+    order: 3;
+  }
+
+  .c-rv-personal-content {
+    margin: auto;
+  }
+
+  .c-rv-slider {
+    border-bottom: none;
+  }
+
+  .c-rv-title {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .c-rv-quote-icon {
+    text-align: left;
+    padding: 20px 0px;
+  }
+
+  .c-rv-item-decs {
+    text-align: left;
   }
 }
